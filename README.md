@@ -5,4 +5,49 @@ In bigger organizations, say where we have 100+ staffs at minimum, it is difficu
 
 This is an Hybrid App, developed using Phonegap + AngularJS + Ionic Framework
 
-Intial code was created by using Ionic SideMenu Seed Project
+Intial code was created by using Ionic SideMenu Seed Project.
+
+List of Pages / Functionalities :
+================================
+
+	1) Lading Page contains introduction about the app
+
+	2) Login Page (  ORG Code  +  Phone Number )
+
+	3) List Page 
+
+	 		Contains all the employee list 
+
+	 		Search Option to find an employee details
+
+	4) Details Page
+
+			Employee Details Page
+
+				- Employee Picture
+
+				- Name and desigination
+
+				- Contact email Ids
+
+				- Contact phone nos 
+
+					- Abel to make calls from this app
+
+				- Option to send SMS from the this app
+
+				- Socail Media Links
+
+	5)  SideMenu
+
+			  Will have list of menus to navigate
+
+			  	- About Page - Taks about the app 
+
+			  	- Terms of use
+
+			  	- Sync 
+
+			  		-  Employee detaills will be synced manually 
+
+			  	- Logout 
