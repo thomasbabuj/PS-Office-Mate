@@ -32,7 +32,7 @@ List of Pages / Functionalities :
 
 				- Contact phone nos 
 
-					- Abel to make calls from this app
+					- Able to make calls from this app
 
 				- Option to send SMS from the this app
 
@@ -51,3 +51,5 @@ List of Pages / Functionalities :
 			  		-  Employee detaills will be synced manually 
 
 			  	- Logout 
+
+	6)  There will be a admin site to manage the contacts and update changes to the content.
