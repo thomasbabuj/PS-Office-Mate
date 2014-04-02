@@ -1,0 +1,19 @@
+<ion-view title="Employees List">
+  <ion-nav-buttons side="left">
+    <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+  </ion-nav-buttons>
+  <div class="bar bar-subheader item-input-inset">
+    <label class="item-input-wrapper">
+      <i class="icon ion-ios7-search placeholder-icon"></i>
+      <input id="searchKey" type="search" placeholder="Search" ng-model="searchKey" >
+      <button class="button button-clear" ng-click="clearSearch()">X</button>
+    </label>
+  </div>
+  <ion-content class="has-header">
+    <ion-list>
+      <ion-item ng-repeat="employee in employees | filter:searchKey" type="item-text-wrapo" href="#/employee/{{employee.id}}" >
+        <h3>{{employee.firstName}} {{employee.lastName}}</h3>
+        <p>{{employee.title}}</p>
+    </ion-list>
+  </ion-content>
+</ion-view>

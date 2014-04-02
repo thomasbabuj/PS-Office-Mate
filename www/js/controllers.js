@@ -1,6 +1,29 @@
-angular.module('starter.controllers', [])
+angular.module('officeMate.controllers', [])
 
 .controller('AppCtrl', function($scope) {
+})
+
+.controller('EmployeeListCtrl', function($scope, EmployeeService) {
+	$scope.searchKey = "";
+
+	$scope.clearSearch = function() {
+		$scope.searchKey = "";
+		findAllEmployees();
+	}
+
+	$scope.search = function() {
+		EmployeeService.findByName($scope.searchKey).then(function(employees) {
+			$scope.employees = employees;
+		});
+	}
+
+	var findAllEmployees = function() {
+		EmployeeService.findAll().then(function (employees) {
+			$scope.employees = employees;
+		});
+	}
+
+	findAllEmployees();
 })
 
 .controller('PlaylistsCtrl', function($scope) {

@@ -5,7 +5,7 @@
 // the 2nd parameter is an array of 'requires'
 // 'starter.services' is found in services.js
 // 'starter.controllers' is found in controllers.js
-angular.module('starter', ['ionic', 'starter.controllers'])
+angular.module('officeMate', ['ionic', 'officeMate.services','officeMate.controllers' ])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -23,6 +23,17 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       abstract: true,
       templateUrl: "templates/menu.html",
       controller: 'AppCtrl'
+    })
+
+
+    .state('app.employee-list', {
+      url: "/employees",
+      views: {
+        'menuContent' :{
+          templateUrl: "templates/employee-list.html",
+          controller : 'EmployeeListCtrl'
+        }
+      }
     })
 
     .state('app.search', {
