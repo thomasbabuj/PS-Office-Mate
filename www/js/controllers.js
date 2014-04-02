@@ -26,6 +26,14 @@ angular.module('officeMate.controllers', [])
 	findAllEmployees();
 })
 
+.controller ('EmployeeDetailCtrl', function($scope, $stateParams, EmployeeService) {
+
+	EmployeeService.findById($stateParams.employeeId).then(function(employee) {
+		$scope.employee = employee;
+	});
+
+})
+
 .controller('PlaylistsCtrl', function($scope) {
   $scope.playlists = [
     { title: 'Reggae', id: 1 },

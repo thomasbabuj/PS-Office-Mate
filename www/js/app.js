@@ -36,6 +36,16 @@ angular.module('officeMate', ['ionic', 'officeMate.services','officeMate.control
       }
     })
 
+    .state('app.employee-detail', {
+      url : '/employee/:employeeId',
+      views : {
+        'menuContent' : {
+          templateUrl : "templates/employee-detail.html",
+          controller : 'EmployeeDetailCtrl'
+        }
+      }
+    })
+
     .state('app.search', {
       url: "/search",
       views: {

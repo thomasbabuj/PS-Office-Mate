@@ -12,7 +12,7 @@
   </ion-header-bar>
   <ion-content class="has-header">
     <ion-list>
-      <ion-item ng-repeat="employee in employees | filter:searchKey" type="item-text-wrapo" href="#/employee/{{employee.id}}" >
+      <ion-item ng-repeat="employee in employees | filter:searchKey" type="item-text-wrapo" href="#/app/employee/{{employee.id}}" >
         <h3>{{employee.firstName}} {{employee.lastName}}</h3>
         <p>{{employee.title}}</p>
     </ion-list>
