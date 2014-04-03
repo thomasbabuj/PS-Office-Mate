@@ -21,3 +21,7 @@ body:before {
   white-space: pre;
   font-family: monospace;
   content: "Errno::ENOENT: No such file or directory - scss/ionic.app.css"; }
+
+  .app-content-background {
+  	background-color: red;
+  }
