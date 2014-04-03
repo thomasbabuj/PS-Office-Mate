@@ -47,7 +47,7 @@ angular.module('officeMate.services', [])
             },
 
             findByManager: function (managerId) {
-                var deferred = $q.defer(),
+	            var deferred = $q.defer(),
                     results = employees.filter(function (element) {
                         return parseInt(managerId) === element.managerId;
                     });

@@ -36,6 +36,7 @@ angular.module('officeMate', ['ionic', 'officeMate.services','officeMate.control
       }
     })
 
+
     .state('app.employee-detail', {
       url : '/employee/:employeeId',
       views : {
@@ -46,43 +47,48 @@ angular.module('officeMate', ['ionic', 'officeMate.services','officeMate.control
       }
     })
 
-    .state('app.search', {
-      url: "/search",
+
+
+
+    .state('app.employee-reports', {
+      url: "/employee/:employeeId/reports",
       views: {
         'menuContent' :{
-          templateUrl: "templates/search.html"
+          templateUrl: "templates/employee-reports.html",
+          controller : 'EmployeeReportsCtrl'
         }
       }
     })
 
-    .state('app.browse', {
-      url: "/browse",
+    .state('app.sync', {
+      url: "/sync",
       views: {
         'menuContent' :{
-          templateUrl: "templates/browse.html"
-        }
-      }
-    })
-    .state('app.playlists', {
-      url: "/playlists",
-      views: {
-        'menuContent' :{
-          templateUrl: "templates/playlists.html",
-          controller: 'PlaylistsCtrl'
+          templateUrl: "templates/sync.html"
         }
       }
     })
 
-    .state('app.single', {
-      url: "/playlists/:playlistId",
-      views: {
-        'menuContent' :{
-          templateUrl: "templates/playlist.html",
-          controller: 'PlaylistCtrl'
+    .state('app.about', {
+      url : '/about',
+      views : {
+        'menuContent' : {
+          templateUrl : "templates/about.html",
+          controller : 'AboutCtrl'
+        }
+      }
+    })
+
+    .state('app.terms', {
+      url : '/terms',
+      views : {
+        'menuContent' : {
+          templateUrl : "templates/terms.html",
         }
       }
     });
+    
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/app/playlists');
+  $urlRouterProvider.otherwise('/app/employees');
 });
 

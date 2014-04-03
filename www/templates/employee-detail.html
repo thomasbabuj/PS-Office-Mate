@@ -1,4 +1,4 @@
-<ion-view title="Employees List">
+<ion-view title="{{employee.firstName}} {{employee.lastName}}"  >
   <ion-nav-buttons side="left">
     <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
   </ion-nav-buttons>
@@ -15,7 +15,7 @@
     	<a class="item item-icon-left" href="#/app/employee/{{employee.managerId}}" ng-if="employee.managerId > 0">
     		<i class="icon ion-ios7-person"></i>
     		View Manager
-    		<p>{{employee.managerName</p>
+    		<p>{{employee.managerName}}</p>
     	</a>
     	<a class="item item-icon-left" href="#/app/employee/{{employee.id}}/reports" ng-if="employee.reports > 0">
     		<i class="icon ion-person-stalker"></i>
