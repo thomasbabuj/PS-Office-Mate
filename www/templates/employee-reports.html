@@ -1,7 +1,11 @@
 <ion-view title="Direct Reports" >
-  <ion-nav-buttons side="left">
+  <!--ion-nav-buttons side="left">
     <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
-  </ion-nav-buttons>
+  </ion-nav-buttons-->
+  <ion-nav-bar class="bar-assertive nav-title-slide-ios7" align-title="center">
+      <ion-nav-back-button class="button-icon ion-arrow-left-c">
+      </ion-nav-back-button>
+  </ion-nav-bar>
   <ion-content class="has-header" padding="true">
     <ion-list>
       <ion-item ng-repeat="employee in employees" type="item-text-wrap" href="#/app/employee/{{employee.id}}">
