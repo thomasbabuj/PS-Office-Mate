@@ -1,32 +1,30 @@
-/*
-Errno::ENOENT: No such file or directory - scss/ionic.app.css
+@font-face {
+    font-family: 'droid_sansregular';
+    src: url('fonts/DroidSans-webfont.eot');
+    src: url('fonts/DroidSans-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/DroidSans-webfont.woff') format('woff'),
+         url('fonts/DroidSans-webfont.ttf') format('truetype'),
+         url('fonts/DroidSans-webfont.svg#droid_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
 
-Backtrace:
-/Library/Ruby/Gems/2.0.0/gems/sass-3.3.4/lib/sass/plugin/compiler.rb:405:in `read'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.3.4/lib/sass/plugin/compiler.rb:405:in `update_stylesheet'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.3.4/lib/sass/plugin/compiler.rb:189:in `block in update_stylesheets'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.3.4/lib/sass/plugin/compiler.rb:186:in `each'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.3.4/lib/sass/plugin/compiler.rb:186:in `update_stylesheets'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.3.4/lib/sass/plugin/compiler.rb:221:in `watch'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.3.4/lib/sass/plugin.rb:108:in `method_missing'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.3.4/lib/sass/exec.rb:509:in `watch_or_update'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.3.4/lib/sass/exec.rb:346:in `process_result'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.3.4/lib/sass/exec.rb:43:in `parse'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.3.4/lib/sass/exec.rb:22:in `parse!'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.3.4/bin/sass:13:in `<top (required)>'
-/usr/bin/sass:23:in `load'
-/usr/bin/sass:23:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Errno::ENOENT: No such file or directory - scss/ionic.app.css"; }
+}
 
-  .app-content-background {
-  	background-color: red;
-  }
 body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, input ,button, select, textarea {
+	font-family: 'droid_sansregular';	
+}
 
-	font-family: 'Droid Sans', sans-serif;
-	/* font-family: 'Lobster', cursive; */
+.profile {
+	
+}
+
+.profile .pic {	
+	width: 60;
+	height: 60;
+	float: left;
+	margin-right: 10px;
+}
+
+.profile .profile_desg {	
+	margin-top: 10px;
 }
