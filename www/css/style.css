@@ -25,3 +25,8 @@ body:before {
   .app-content-background {
   	background-color: red;
   }
+body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, input ,button, select, textarea {
+
+	font-family: 'Droid Sans', sans-serif;
+	/* font-family: 'Lobster', cursive; */
+}
